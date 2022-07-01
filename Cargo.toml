@@ -1,0 +1,21 @@
+[package]
+name = "sauron-reorder"
+version = "0.1.0"
+authors = ["Lily Chung <lkdc@mit.edu>"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = { version = "0.2.63", features = ["nightly"] }
+sauron = "0.49"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "console",
+]
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.13"

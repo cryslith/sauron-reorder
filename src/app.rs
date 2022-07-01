@@ -37,14 +37,14 @@ impl Application<Msg> for App {
     let mut my_buttons: Vec<Node<Msg>> = vec![
       button(
         [
-          attr("data-disambiguate", "red"), // suggested fix
+          key("red"),
           on_click(|_| Msg::RedClicked),
         ],
         [text!("Red")],
       ),
       button(
         [
-          attr("data-disambiguate", "blue"), // suggested fix
+          key("blue"),
           on_click(|_| Msg::BlueClicked),
         ],
         [text!("Blue")],
